@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	   <title>ENTRAR</title>
+	   <meta name="description" content=""/>
+	   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	   <link rel="stylesheet" href="css/bootstrap.min.css"/>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+		<link rel="icon" type="image/png" href="login/images/icons/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="login/fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="login/vendor/animate/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="login/vendor/css-hamburgers/hamburgers.min.css"/>
+		<link rel="stylesheet" type="text/css" href="login/vendor/select2/select2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="login/css/util.css"/>
+		<link rel="stylesheet" type="text/css" href="login/css/main.css"/>
+		
+		 <link rel="stylesheet" href="css/style.css"/>
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>     
+  </h:head>
+<h:body>
+	
+	<div class="limiter">
+
+	
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" >
+					<img src="login/images/Vingadores.png" alt="IMG"/>
+					
+				</div>
+				
+				<h:form class="login100-form validate-form">
+					<span class="login100-form-title">
+						<h1>Novo Cadastro</h1>
+					</span>
+					<div class="wrap-input100 validate-input" data-validate = "E-mail valido é obrigatorio">
+						<h:inputText class="input100" type="text" name="email" placeholder="Email" value="#{loginManagedBean.cpf}"/>
+						
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Senha requerida">
+						<h:inputText class="input100" type="senha" name="pass" placeholder="Senha" value="#{loginManagedBean.senha}"/>
+						
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<p:commandLink  class="login100-form-btn" action="#{loginManagedBean.logar}" value="ENTRAR"/>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Esqueci
+						</span>
+						<a class="txt2" href="#">
+							Usuário / Senha?
+						</a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="cadastro.xhtml" >
+							Crie Sua Conta
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</h:form>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="login/vendor/bootstrap/js/popper.js"></script>
+	<script src="login/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="login/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="login/vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="login/js/main.js"></script>
+
+</h:body>
+</html>
